@@ -11,7 +11,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(pastel-bg.jpg);
+  /* Nếu có ảnh thì dùng dòng dưới */
+  /* background-image: url(images/pastel-bg.jpg); */
+  /* Nếu không có ảnh thì dùng gradient */
+  background: linear-gradient(120deg, #f6d365 0%, #fda085 100%, #a1c4fd 100%);
   background-position: center;
   background-size: cover;
 }
