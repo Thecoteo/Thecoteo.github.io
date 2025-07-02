@@ -1,27 +1,107 @@
-new Swiper('.card-wrapper', {
-    loop: true,
-    spaceBetween: 30,
-    // Pagination bullets
-    pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    dynamicBullets: true
-    },
-    // Navigation arrows
-    navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-    },
-    // Responsive breakpoints
-    breakpoints: {
-    0: {
-    slidesPerView: 1
-    },
-    768: {
-    slidesPerView: 2
-    },
-    1024: {
-    slidesPerView: 3
-     }
-    }
-    });
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Slider HTML & CSS | CodingNepal</title>
+  <!-- Linking Google fonts for icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <!-- Linking SwiperJS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Profile Card Section (from User Profile Card) -->
+  <section class="main">
+    <div class="profile-card">
+      <div class="image">
+        <img src="dog.jpg" alt="Ảnh đại diện" class="profile-pic">
+      </div>
+      <div class="data">
+        <h2>Trần Văn Thế</h2>
+        <span>Developer & Designer</span>
+      </div>
+      <div class="row">
+        <div class="info">
+          <h3>Following</h3>
+          <span>120</span>
+        </div>
+        <div class="info">
+          <h3>Followers</h3>
+          <span>1M</span>
+        </div>
+        <div class="info">
+          <h3>Posts</h3>
+          <span>209</span>
+        </div>
+      </div>
+      <div class="buttons">
+        <a href="https://www.youtube.com/" class="btn" target="_blank">YouTube</a>
+        <a href="https://www.facebook.com/" class="btn" target="_blank">Facebook</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Profile Card Section -->
+
+  <div class="container swiper">
+    <div class="card-wrapper">
+      <!-- Card slides container -->
+      <ul class="card-list swiper-wrapper">
+        <li class="card-item swiper-slide">
+          <a href="#" class="card-link">
+            <img src="designer.jpg" alt="Card Image" class="card-image">
+            <p class="badge badge-designer">Thiết kế</p>
+            <h2 class="card-title">Lorem ipsum dolor sit explicabo adipisicing elit</h2>
+            <button class="card-button material-symbols-rounded">arrow_forward</button>
+          </a>
+        </li>
+        <li class="card-item swiper-slide">
+          <a href="#" class="card-link">
+            <img src="developer.jpg" alt="Card Image" class="card-image">
+            <p class="badge badge-developer">Lập trình</p>
+            <h2 class="card-title">Lorem ipsum dolor sit explicabo adipisicing elit</h2>
+            <button class="card-button material-symbols-rounded">arrow_forward</button>
+          </a>
+        </li>
+        <li class="card-item swiper-slide">
+          <a href="#" class="card-link">
+            <img src="marketer.jpeg" alt="Card Image" class="card-image">
+            <p class="badge badge-marketer">Marketing</p>
+            <h2 class="card-title">Lorem ipsum dolor sit explicabo adipisicing elit</h2>
+            <button class="card-button material-symbols-rounded">arrow_forward</button>
+          </a>
+        </li>
+        <li class="card-item swiper-slide">
+          <a href="#" class="card-link">
+            <img src="gamer.jpg" alt="Card Image" class="card-image">
+            <p class="badge badge-gamer">Game thủ</p>
+            <h2 class="card-title">Lorem ipsum dolor sit explicabo adipisicing elit</h2>
+            <button class="card-button material-symbols-rounded">arrow_forward</button>
+          </a>
+        </li>
+        <li class="card-item swiper-slide">
+          <a href="#" class="card-link">
+            <img src="edittor.jpg" alt="Card Image" class="card-image">
+            <p class="badge badge-editor">Biên tập</p>
+            <h2 class="card-title">Lorem ipsum dolor sit explicabo adipisicing elit</h2>
+            <button class="card-button material-symbols-rounded">arrow_forward</button>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- Navigation Buttons -->
+      <div class="swiper-slide-button swiper-button-prev"></div>
+      <div class="swiper-slide-button swiper-button-next"></div>
+    </div>
+  </div>
+
+  <!-- Linking SwiperJS script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Linking custom script -->
+  <script src="script.js"></script>
+</body>
+</html>
